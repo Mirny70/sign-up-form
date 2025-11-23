@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +43,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 1.5rem 8rem;
+    font-family: 'Norse', serif;
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
@@ -119,6 +127,15 @@ body {
 .form-group input:focus {
     border-color: #4F46E5;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:invalid {
+    border-color: #DC2626;
+}
+
+.form-group input:invalid:focus {
+    border-color: #DC2626;
+    box-shadow: 2px 2px 4px rgba(220, 38, 38, 0.2);
 }
 
 .submit-section {
